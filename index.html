@@ -8,6 +8,10 @@
   <link rel="preload" href="https://scripts.converteai.net/ed40d196-cbd6-4c9a-84f7-04b94209eac1/players/69d073739a320eec0638e441/v4/player.js" as="script">
   <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
   <link rel="preload" href="https://cdn.converteai.net/ed40d196-cbd6-4c9a-84f7-04b94209eac1/69d0733851e267f2204c81c1/main.m3u8" as="fetch">
+  <link rel="preconnect" href="https://cdn.converteai.net" crossorigin>
+  <link rel="preconnect" href="https://scripts.converteai.net" crossorigin>
+  <link rel="preconnect" href="https://images.converteai.net" crossorigin>
+  <link rel="preconnect" href="https://api.vturb.com.br" crossorigin>
   <link rel="dns-prefetch" href="https://cdn.converteai.net">
   <link rel="dns-prefetch" href="https://scripts.converteai.net">
   <link rel="dns-prefetch" href="https://images.converteai.net">
@@ -34,9 +38,11 @@
       max-width: 100%;
       margin: 0 auto 32px;
       padding-top: 16px;
-      /* Reserva espaço para evitar CLS — aspect ratio 16:9 */
       aspect-ratio: 16 / 9;
-      contain: layout;
+      contain: layout style;
+      background: #000;
+      border-radius: 4px;
+      overflow: hidden;
     }
 
     .video-wrap vturb-smartplayer {
@@ -227,6 +233,7 @@
       var s=document.createElement("script");
       s.src="https://scripts.converteai.net/ed40d196-cbd6-4c9a-84f7-04b94209eac1/players/69d073739a320eec0638e441/v4/player.js";
       s.async=!0;
+      s.defer=!0;
       document.head.appendChild(s);
     </script>
   </div>
