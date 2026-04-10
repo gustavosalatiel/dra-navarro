@@ -11,6 +11,7 @@
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
       background: #fff;
       color: #1c1e21;
+      overflow-x: hidden;
     }
 
     .container {
@@ -19,109 +20,12 @@
       padding: 0 24px;
     }
 
-    /* ── HERO ── */
-    .hero {
-      text-align: center;
-      padding: 36px 20px 16px;
-    }
-
-    .hero h1 {
-      font-size: 30px;
-      font-weight: 900;
-      line-height: 1.38;
-      color: #000;
-      max-width: 620px;
-      margin: 0 auto 22px;
-      letter-spacing: -0.2px;
-    }
-
-    .highlight {
-      background: #d32f2f;
-      color: #fff;
-      padding: 1px 7px 3px;
-      border-radius: 3px;
-    }
-
     /* ── VIDEO ── */
     .video-wrap {
-      width: 560px;
+      width: 640px;
       max-width: 100%;
       margin: 0 auto 32px;
-    }
-
-    .video-box {
-      position: relative;
-      background: #111;
-      padding-top: 56.25%;
-      overflow: hidden;
-      cursor: pointer;
-    }
-
-    .video-thumb {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    /* Placeholder gradient when no real thumb */
-    .video-placeholder {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .play-btn {
-      width: 64px;
-      height: 64px;
-      background: rgba(255,255,255,0.15);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid rgba(255,255,255,0.4);
-    }
-
-    .play-btn::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 0;
-      border-top: 18px solid transparent;
-      border-bottom: 18px solid transparent;
-      border-left: 30px solid rgba(255,255,255,0.9);
-      margin-left: 6px;
-    }
-
-    .video-caption {
-      position: absolute;
-      bottom: 38px;
-      left: 0; right: 0;
-      text-align: center;
-      font-size: 22px;
-      font-weight: 900;
-      color: #fff;
-      text-shadow: 1px 2px 8px rgba(0,0,0,0.85);
-      letter-spacing: 1px;
-      pointer-events: none;
-    }
-
-    .video-caption em {
-      color: #ffe600;
-      font-style: normal;
-    }
-
-    .progress-bar {
-      position: absolute;
-      bottom: 0; left: 0;
-      width: 28%;
-      height: 6px;
-      background: #ff5722;
+      padding-top: 16px;
     }
 
     /* ── DIVIDER ── */
@@ -131,321 +35,16 @@
       margin: 8px 0 28px;
     }
 
-    /* ── SECTION 2: ACCEDE A TODO ESTO (primera instancia) ── */
-    .section-cta {
-      text-align: center;
-      padding: 48px 20px;
-      background: #fff;
-    }
-
-    .section-cta h2 {
-      font-size: 55px;
-      font-weight: bold;
-      color: rgb(255, 89, 78);
-      margin-bottom: 32px;
-    }
-
-    .product-image {
-      max-width: 100%;
-      height: auto;
-      margin: 0 auto 32px;
-      display: block;
-      max-width: 600px;
-    }
-
-    .price-section {
-      margin: 24px 0;
-    }
-
-    .price-before {
-      font-size: 20px;
-      color: #999;
-      text-decoration: line-through;
-      margin-bottom: 8px;
-    }
-
-    .price-after {
-      font-size: 48px;
-      font-weight: bold;
-      color: #000;
-      margin-bottom: 24px;
-    }
-
-    .progress-text {
-      font-size: 24px;
-      font-weight: 600;
-      color: #000;
-      margin-bottom: 12px;
-    }
-
-    .progress-container {
-      background: #e0e0e0;
-      height: 12px;
-      border-radius: 6px;
-      overflow: hidden;
-      max-width: 400px;
-      margin: 0 auto 32px;
-    }
-
-    .progress-fill {
-      background: #4caf50;
-      height: 100%;
-      width: 93%;
-    }
-
-    .cta-button {
-      background: rgb(255, 22, 22);
-      color: #fff;
-      border: none;
-      padding: 16px 32px;
-      font-size: 28px;
-      border-radius: 300px;
-      cursor: pointer;
-      box-shadow: 0 4px 12px rgba(255, 22, 22, 0.4);
-      font-weight: 600;
-      max-width: 800px;
-      width: 90%;
-      margin: 0 auto 24px;
-      display: block;
-      text-decoration: none;
-    }
-
-    .cta-button:hover {
-      background: rgb(230, 0, 0);
-      box-shadow: 0 6px 16px rgba(255, 22, 22, 0.6);
-    }
-
-    .payment-logos {
-      max-width: 100%;
-      height: auto;
-      margin: 24px auto;
-      display: block;
-      max-width: 500px;
-    }
-
-    .payment-text {
-      font-size: 25px;
-      font-weight: 500;
-      color: #000;
-      margin-top: 16px;
-    }
-
-    /* ── SECTION 3: HOY TE LLEVARÁS ── */
-    .banner-green {
-      background: rgb(0, 100, 0);
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-      font-size: 34px;
-      margin: 32px 0;
-    }
-
-    .banner-green strong {
-      font-weight: bold;
-    }
-
-    /* ── SECTION 4-7: PRODUCTOS Y REGALOS ── */
-    .product-section {
-      padding: 40px 20px;
-      background: #fff;
-      text-align: center;
-    }
-
-    .product-section h3 {
-      font-size: 18px;
-      font-weight: 600;
-      color: rgb(255, 89, 78);
-      margin-bottom: 12px;
-    }
-
-    .product-section h2 {
-      font-size: 30px;
-      font-weight: 500;
-      color: #000;
-      margin-bottom: 24px;
-    }
-
-    .product-content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 32px;
-      flex-wrap: wrap;
-      margin-bottom: 24px;
-    }
-
-    .product-image-small {
-      max-width: 400px;
-      width: 100%;
-      height: auto;
-    }
-
-    .product-bullets {
-      text-align: left;
-      flex: 1;
-      min-width: 280px;
-    }
-
-    .product-bullets li {
-      list-style: none;
-      margin-bottom: 16px;
-      font-size: 16px;
-      line-height: 1.6;
-      color: #333;
-    }
-
-    .product-bullets li:before {
-      content: '✅ ';
-      margin-right: 8px;
-    }
-
-    .product-value {
-      font-size: 18px;
-      color: #000;
-      margin-top: 16px;
-    }
-
-    .product-value .strike {
-      text-decoration: line-through;
-      color: #999;
-      font-weight: bold;
-    }
-
-    .product-value .highlight-value {
-      font-weight: bold;
-      color: #000;
-    }
-
-    /* ── SECTION 8: CÓMO REALIZAR TU INSCRIPCIÓN ── */
-    .steps-section {
-      padding: 48px 20px;
-      background: #fff;
-    }
-
-    .steps-section h2 {
-      font-size: 45px;
-      font-weight: bold;
-      text-align: center;
-      color: #000;
-      margin-bottom: 48px;
-    }
-
-    .step {
-      margin-bottom: 48px;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    .step-content {
-      flex: 1;
-    }
-
-    .step-number {
-      font-size: 24px;
-      font-weight: bold;
-      color: #000;
-      margin-bottom: 12px;
-    }
-
-    .step-text {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #333;
-      margin-bottom: 12px;
-    }
-
-    .step-image {
-      max-width: 100%;
-      height: auto;
-      margin-top: 16px;
-    }
-
-    .step-bullets {
-      list-style: none;
-      margin-top: 12px;
-    }
-
-    .step-bullets li {
-      margin-bottom: 8px;
-      font-size: 16px;
-      color: #333;
-    }
-
-    .step-bullets li:before {
-      content: '✓ ';
-      color: #4caf50;
-      font-weight: bold;
-      margin-right: 8px;
-    }
-
-    .step-gifts {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      font-size: 16px;
-      color: #333;
-    }
-
-    .step-gifts strong {
-      font-weight: bold;
-    }
-
-    /* ── SECTION 10: GARANTÍA ── */
-    .guarantee-section {
-      padding: 48px 20px;
-      background: #fff;
-      text-align: center;
-    }
-
-    .guarantee-section h2 {
-      font-size: 40px;
-      font-weight: bold;
-      color: #000;
-      margin-bottom: 24px;
-    }
-
-    .guarantee-badge {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 24px;
-      font-weight: bold;
-      color: #fff;
-      font-size: 14px;
-      text-align: center;
-      padding: 16px;
-      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
-    }
-
-    .guarantee-text {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #333;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
     /* ── COMMENTS ── */
     .comments { padding-bottom: 8px; }
 
-    /* wrapper de cada comment (a-fb-parent) */
     .comment {
       display: flex;
       gap: 8px;
       margin-bottom: 12px;
       align-items: flex-start;
-      background: transparent;
-      border: none;
-      padding: 0;
-      box-shadow: none;
     }
 
-    /* avatar — redondo conforme solicitado */
     .avatar {
       width: 40px;
       height: 40px;
@@ -455,10 +54,8 @@
       background: #d0d2d6;
     }
 
-    /* info wrapper (a-fb-info) */
     .c-body { flex: 1; min-width: 0; }
 
-    /* nome (a-fb-user) — azul Facebook exato */
     .c-name {
       font-family: Helvetica, Arial, sans-serif;
       font-weight: 600;
@@ -468,7 +65,6 @@
       display: inline-block;
     }
 
-    /* texto do comentário (a-fb-comm) */
     .c-text {
       font-family: Helvetica, Arial, sans-serif;
       font-size: 14px;
@@ -477,7 +73,6 @@
       margin-top: 4px;
     }
 
-    /* área de ações (a-fb-misc) */
     .c-meta {
       display: flex;
       flex-direction: row;
@@ -488,7 +83,6 @@
       font-size: 12px;
     }
 
-    /* Me gusta / Responder (a-fb-misc-txt) */
     .c-meta .action {
       font-family: Helvetica, Arial, sans-serif;
       color: rgb(66, 103, 178);
@@ -498,14 +92,12 @@
     }
     .c-meta .action:hover { text-decoration: underline; }
 
-    /* ponto separador (a-fb-dot) */
     .dot {
       color: rgb(66, 103, 178);
       font-size: 12px;
       margin: 0 4px;
     }
 
-    /* container de likes (a-fb-likes) */
     .likes {
       display: inline-flex;
       align-items: center;
@@ -515,7 +107,6 @@
       font-family: Helvetica, Arial, sans-serif;
     }
 
-    /* ícone de like — imagem real do original */
     .like-icon {
       width: 14px;
       height: 14px;
@@ -524,14 +115,12 @@
       flex-shrink: 0;
     }
 
-    /* horário (a-fb-time) */
     .c-time {
       font-family: Helvetica, Arial, sans-serif;
       font-size: 12px;
       color: rgb(66, 103, 178);
     }
 
-    /* replies aninhadas — indentadas, sem caixa */
     .replies {
       margin-top: 8px;
       margin-left: 54px;
@@ -544,15 +133,9 @@
       display: flex;
       gap: 8px;
       align-items: flex-start;
-      background: transparent;
-      border: none;
-      padding: 0;
     }
 
-    .reply .avatar {
-      width: 36px;
-      height: 38px;
-    }
+    .reply .avatar { width: 36px; height: 36px; }
 
     /* ── REFERENCIAS ── */
     .refs {
@@ -590,9 +173,6 @@
       border-left-color: #ccc;
     }
 
-    .ref-item a { color: #1877f2; text-decoration: none; }
-    .ref-item a:hover { text-decoration: underline; }
-
     .ref-hidden { display: none; }
 
     .btn-toggle {
@@ -606,233 +186,35 @@
       margin-top: 4px;
       font-family: inherit;
     }
-
     .btn-toggle:hover { text-decoration: underline; }
 
+    /* ── RESPONSIVIDADE ── */
     @media (max-width: 640px) {
-      .hero h1 { font-size: 22px; }
-      .video-caption { font-size: 17px; }
       .replies { margin-left: 32px; }
-      .section-cta h2 { font-size: 36px; }
-      .price-after { font-size: 36px; }
-      .cta-button { font-size: 20px; }
-      .banner-green { font-size: 24px; }
-      .product-content { flex-direction: column; }
-      .steps-section h2 { font-size: 28px; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 14px; }
+      .c-text { font-size: 13px; }
+      .ref-item { font-size: 12px; }
     }
   </style>
 </head>
 <body>
 <div class="container">
 
-  <!-- ══ HERO ══ -->
-  <div class="hero">
-    <h1>
-      Secreto oculto en el Test del<br>
-      Malvavisco revela cómo reparar<br>
-      el <span class="highlight">cerebro de tu hijo</span> en 9 minutos
-    </h1>
-
-    <div class="video-wrap" style="width:640px;max-width:100%;margin:0 auto 32px;">
-      <div id="vid-68c59b73d64e18967f74c4ee" style="position:relative;width:100%;padding:56.25% 0 0;">
-        <vturb-smartplayer id="vid-68c59b73d64e18967f74c4ee" style="position:absolute;top:0;left:0;width:100%;height:100%;"></vturb-smartplayer>
-      </div>
-      <script type="text/javascript" id="scr_68c59b73d64e18967f74c4ee">
-        var s=document.createElement("script");
-        s.src="https://scripts.converteai.net/b4025b08-5737-4509-955c-ea8f4b42f18a/players/68c59b73d64e18967f74c4ee/v4/player.js";
-        s.async=true;
-        document.head.appendChild(s);
-      </script>
-    </div>
+  <!-- ══ VIDEO ══ -->
+  <div class="video-wrap">
+    <vturb-smartplayer id="vid-69d073739a320eec0638e441" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>
+    <script type="text/javascript">
+      var s=document.createElement("script");
+      s.src="https://scripts.converteai.net/ed40d196-cbd6-4c9a-84f7-04b94209eac1/players/69d073739a320eec0638e441/v4/player.js";
+      s.async=!0;
+      document.head.appendChild(s);
+    </script>
   </div>
 
   <hr class="divider">
-
-  <!-- ══ SECTION 2: ACCEDE A TODO ESTO (primera instancia) ══ -->
-  <div class="section-cta">
-    <h2>ACCEDE A TODO ESTO</h2>
-    <img src="https://media.atomicatpages.net/u/ALg4g9ESkMSs0JccelZ1IzVZqlk1/Pictures/mLiAPq3584247.png" alt="Producto Onda de la Atención" class="product-image">
-    <div class="price-section">
-      <div class="price-before">ANTES: $497 USD</div>
-      <div class="price-after">$ 29 USD</div>
-    </div>
-    <div class="progress-text">Últimos 4 cupos disponibles...</div>
-    <div class="progress-container">
-      <div class="progress-fill"></div>
-    </div>
-    <a href="https://pay.hotmart.com/V104145766H?checkoutMode=10&hidebillet=1" class="cta-button">¡TOCA AQUÍ PARA OBTENER LA ONDA DE LA ATENCIÓN!</a>
-    <img src="https://media.atomicatpages.net/u/ALg4g9ESkMSs0JccelZ1IzVZqlk1/Pictures/psCJDu7613421.webp" alt="Métodos de pago" class="payment-logos">
-    <div class="payment-text">¡Haz clic y conoce el precio en tu moneda local!</div>
-  </div>
-
-  <!-- ══ SECTION 3: HOY TE LLEVARÁS ══ -->
-  <div class="banner-green">
-    Con tu inscripción <strong>HOY TE LLEVARÁS</strong> todo esto.
-  </div>
-
-  <!-- ══ SECTION 4: PRODUCTO PRINCIPAL ══ -->
-  <div class="product-section">
-    <div class="product-content">
-      <img src="https://media.atomicatpages.net/u/ALg4g9ESkMSs0JccelZ1IzVZqlk1/Pictures/voEgfW9112584.png" alt="Onda de la Atención" class="product-image-small">
-      <div class="product-bullets">
-        <h2 style="text-align: left; margin-bottom: 20px;">Onda de la Atención</h2>
-        <ul>
-          <li>Enciende el escudo mental de tu hijo para que el ruido y las distracciones dejen de invadir su cabeza.</li>
-          <li>Devuelve el enfoque natural incluso en medio del caos.</li>
-          <li>Detén los apagones invisibles</li>
-          <li>Recupera la calma en casa</li>
-          <li>Convierte la distracción en superpoder</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══ SECTION 5: REGALO #1 ══ -->
-  <div class="product-section">
-    <h3>Regalo #1</h3>
-    <h2>Misión Cerebro Ninja</h2>
-    <div class="product-content">
-      <img src="https://media.atomicatpages.net/u/ALg4g9ESkMSs0JccelZ1IzVZqlk1/Pictures/iwBpoD0471357.png" alt="Misión Cerebro Ninja" class="product-image-small">
-      <div class="product-bullets">
-        <ul>
-          <li>Juegos cortos y divertidos que entrenan la atención de tu hijo sin que se dé cuenta.</li>
-          <li>Retos diarios que convierten la concentración en algo divertido</li>
-        </ul>
-        <div class="product-value">
-          Valor <span class="strike">80 USD</span> <span class="highlight-value">(Gratis uniéndote al entrenamiento)</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══ SECTION 6: REGALO #2 ══ -->
-  <div class="product-section">
-    <h3>Regalo #2</h3>
-    <h2>El Campo Minado en Casa</h2>
-    <div class="product-content">
-      <img src="https://media.atomicatpages.net/u/ALg4g9ESkMSs0JccelZ1IzVZqlk1/Pictures/NldMlv1036672.png" alt="El Campo Minado en Casa" class="product-image-small">
-      <div class="product-bullets">
-        <ul>
-          <li>Descubre los disparadores ocultos en tu hogar que agravan la distracción y la impulsividad.</li>
-          <li>Aprende qué cambios simples reducen el caos y mejoran la concentración</li>
-          <li>Transforma tu hogar en un espacio de calma y enfoque</li>
-        </ul>
-        <div class="product-value">
-          Valor <span class="strike">97 USD</span> <span class="highlight-value">(Gratis uniéndote al entrenamiento)</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══ SECTION 7: REGALO #3 ══ -->
-  <div class="product-section">
-    <h3>Regalo #3</h3>
-    <h2>Operación Carácter de Hierro</h2>
-    <div class="product-content">
-      <img src="https://media.atomicatpages.net/u/ALg4g9ESkMSs0JccelZ1IzVZqlk1/Pictures/QsdBIz1284500.png" alt="Operación Carácter de Hierro" class="product-image-small">
-      <div class="product-bullets">
-        <ul>
-          <li>Proyectos cortos que, desde casa, convierten la atención en resiliencia, empatía y creatividad.</li>
-          <li>Ejercicios simples que haces con tu hijo</li>
-          <li>Actividades prácticas que generan cambios reales</li>
-        </ul>
-        <div class="product-value">
-          Valor <span class="strike">100 USD</span> <span class="highlight-value">(Gratis uniéndote al entrenamiento)</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══ SECTION 8: CÓMO REALIZAR TU INSCRIPCIÓN ══ -->
-  <div class="steps-section">
-    <h2>¿CÓMO REALIZAR TU INSCRIPCIÓN?</h2>
-
-    <!-- Paso #1 -->
-    <div class="step">
-      <div class="step-content">
-        <div class="step-number">Paso #1: Ir a la página de pago de Hotmart</div>
-        <div class="step-text">Entendemos que puede asustar un poco hacer compras en internet. Por eso escogimos la plataforma de Hotmart, la más confiable y segura en América Latina para descargas y pagos digitales.</div>
-        <img src="https://media.atomicatpages.net/u/ALg4g9ESkMSs0JccelZ1IzVZqlk1/Pictures/yxxIAF6578481.jpeg" alt="Paso 1" class="step-image">
-      </div>
-    </div>
-
-    <!-- Paso #2 -->
-    <div class="step">
-      <div class="step-content">
-        <div class="step-number">Paso #2: Comprando</div>
-        <div class="step-text">En esta etapa puedes elegir el medio de pago de tu preferencia. Es muy importante que rellenes la información correcta para que no haya inconvenientes con tu pedido.</div>
-        <img src="https://media.atomicatpages.net/u/ALg4g9ESkMSs0JccelZ1IzVZqlk1/Pictures/xqmhJY4433072.jpeg" alt="Paso 2" class="step-image">
-      </div>
-    </div>
-
-    <!-- Paso #3 -->
-    <div class="step">
-      <div class="step-content">
-        <div class="step-number">Paso #3: Revisar tu correo</div>
-        <div class="step-text">¡Felicidades! En este punto ya haces parte de este entrenamiento exclusivo. Una vez hagas la compra recibirás un correo de confirmación con todos los detalles para acceder a la plataforma.</div>
-        <img src="https://media.atomicatpages.net/u/ALg4g9ESkMSs0JccelZ1IzVZqlk1/Pictures/aJpImb6611630.jpeg" alt="Paso 3" class="step-image">
-      </div>
-    </div>
-
-    <!-- Paso #4 -->
-    <div class="step">
-      <div class="step-content">
-        <div class="step-number">Paso #4: Accediendo a la plataforma</div>
-        <div class="step-text">Para acceder al entrenamiento podrás hacerlo por medio de la aplicación o el navegador que te indicaremos en el correo del paso #3. El acceso es inmediato y podrás comenzar cuando quieras.</div>
-      </div>
-    </div>
-
-    <!-- Paso #5 -->
-    <div class="step">
-      <div class="step-content">
-        <div class="step-number">Paso #5: Conociendo el programa</div>
-        <ul class="step-bullets">
-          <li>Restaura la calma neurológica de tu hijo en minutos</li>
-          <li>Fortalece su capacidad de enfoque y concentración sin fármacos</li>
-          <li>Repara los "microcircuitos" dañados por el estrés</li>
-          <li>Devuélvele su creatividad y su paz</li>
-          <li>Libre del caos diario</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Paso #6 -->
-    <div class="step">
-      <div class="step-content">
-        <div class="step-number">Paso #6: Adquiriendo tus regalos</div>
-        <div class="step-text">En la última sección de la plataforma podrás encontrar los regalos mencionados en esta presentación:</div>
-        <div class="step-gifts">
-          <strong>✓ La Misión Cerebro Ninja</strong>
-          <strong>✓ El Campo Minado en Casa</strong>
-          <strong>✓ Operación Carácter de Hierro</strong>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══ SECTION 9: ACCEDE A TODO ESTO (segunda instancia) ══ -->
-  <div class="section-cta">
-    <h2>ACCEDE A TODO ESTO</h2>
-    <img src="https://media.atomicatpages.net/u/ALg4g9ESkMSs0JccelZ1IzVZqlk1/Pictures/mLiAPq3584247.png" alt="Producto Onda de la Atención" class="product-image">
-    <div class="price-section">
-      <div class="price-before">ANTES: $497 USD</div>
-      <div class="price-after">$ 29 USD</div>
-    </div>
-    <div class="progress-text">Últimos 4 cupos disponibles...</div>
-    <div class="progress-container">
-      <div class="progress-fill"></div>
-    </div>
-    <a href="https://pay.hotmart.com/V104145766H?checkoutMode=10&hidebillet=1" class="cta-button">¡TOCA AQUÍ PARA OBTENER LA ONDA DE LA ATENCIÓN!</a>
-    <img src="https://media.atomicatpages.net/u/ALg4g9ESkMSs0JccelZ1IzVZqlk1/Pictures/psCJDu7613421.webp" alt="Métodos de pago" class="payment-logos">
-    <div class="payment-text">¡Haz clic y conoce el precio en tu moneda local!</div>
-  </div>
-
-  <!-- ══ SECTION 10: GARANTÍA ══ -->
-  <div class="guarantee-section">
-    <h2>GARANTÍA INCONDICIONAL DE 30 DÍAS</h2>
-    <div class="guarantee-badge">30 DÍAS GARANTÍA</div>
-    <p class="guarantee-text">Prueba la ONDA DE LA ATENCIÓN durante 30 días y si por alguna razón sientes que no es para ti. Te devolvemos el 100% de tu dinero sin preguntas.</p>
-  </div>
 
   <!-- ══ COMENTÁRIOS ══ -->
   <div class="comments">
@@ -844,15 +226,11 @@
         <span class="c-name">Carlos Rodriguez</span>
         <p class="c-text">Estaba a punto de cerrar la página, pero la doctora fue tan directa que me quedé. La explicación sobre la verdadera causa del problema me dejó pensando. Anoche, por primera vez en años, mi hijo terminó sus deberes sin una sola lágrima. No se salten la parte donde explica por qué no es su culpa.</p>
         <div class="c-meta">
-          <span class="action">Me gusta</span>
-          <span class="dot">·</span>
-          <span class="action">Responder</span>
-          <span class="dot">·</span>
-          <span class="likes"><img class="like-icon" src="https://media.atomicatpages.net/p/fblike.webp" alt="like"> 74</span>
-          <span class="dot">·</span>
+          <span class="action">Me gusta</span><span class="dot">·</span>
+          <span class="action">Responder</span><span class="dot">·</span>
+          <span class="likes"><img class="like-icon" src="https://media.atomicatpages.net/p/fblike.webp" alt="like"> 74</span><span class="dot">·</span>
           <span class="c-time">1 h</span>
         </div>
-        <!-- replies -->
         <div class="replies">
           <div class="reply">
             <img class="avatar" src="https://media.atomicatpages.net/u/ALg4g9ESkMSs0JccelZ1IzVZqlk1/Pictures/KDqsXf8270353.jpeg" alt="Andrea F.">
@@ -979,7 +357,6 @@
   <!-- ══ REFERENCIAS CIENTÍFICAS ══ -->
   <div class="refs">
     <h2>Referencias Científicas</h2>
-
     <ul class="ref-list">
       <li class="ref-item">
         1 - Gutiérrez-Zotes, A., et al. (2022). Association of In Vivo Locus Coeruleus Imaging With Symptoms and Cognition in Adults With ADHD. <em>JAMA Psychiatry</em>, 79(9), 907–916. https:doi.org/10.1001/jamapsychiatry.2022.2031
@@ -1000,7 +377,6 @@
         6 - Katzman, M.A., et al. (2017). Adult ADHD and comorbid disorders: clinical implications of a dimensional approach. <em>BMC Psychiatry</em>, 17(1). https:doi.org/10.1186/s12888-017-1473-2
       </li>
     </ul>
-
     <button class="btn-toggle" id="toggleBtn" onclick="toggleRefs()">Leer más</button>
   </div>
 
@@ -1014,14 +390,6 @@
     hidden.forEach(el => el.style.display = isHidden ? 'block' : 'none');
     btn.textContent = isHidden ? 'Leer menos' : 'Leer más';
   }
-
-  // Animate progress bar slightly on load for realism
-  window.addEventListener('load', () => {
-    const bar = document.querySelector('.progress-bar');
-    if (bar) {
-      setTimeout(() => { bar.style.transition = 'width 60s linear'; bar.style.width = '75%'; }, 800);
-    }
-  });
 </script>
 </body>
 </html>
